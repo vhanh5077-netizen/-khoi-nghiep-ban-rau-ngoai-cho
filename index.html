@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khởi Nghiệp Bán Rau Ngoài Chợ</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5ead7;
+            color: #3d3025;
+        }
+
+        .game {
+            max-width: 480px;
+            min-height: 100vh;
+            margin: auto;
+            background: #fff8ec;
+        }
+
+        /* Thanh trên cùng */
+        .top-bar {
+            background: #2f7d32;
+            color: white;
+            padding: 14px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .money {
+            background: #fff;
+            color: #2f7d32;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* Tiêu đề */
+        .title {
+            text-align: center;
+            padding: 18px 12px 10px;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-size: 25px;
+            color: #2f6f32;
+        }
+
+        .title p {
+            margin: 7px 0 0;
+            color: #856f5a;
+        }
+
+        /* Khu chợ */
+        .market {
+            margin: 12px;
+            border: 3px solid #b8793b;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #e9c58f;
+        }
+
+        .market-sign {
+            background: #c83f32;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .stall {
+            padding: 18px 12px 20px;
+            text-align: center;
+        }
+
+        .seller {
+            font-size: 55px;
+            margin-bottom: 8px;
+        }
+
+        .counter {
+            background: #b86b35;
+            padding: 14px 8px;
+            border-radius: 14px;
+        }
+
+        .vegetables {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .vegetable {
+            background: #fffdf7;
+            border-radius: 12px;
+            padding: 9px 3px;
+            font-size: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+        }
+
+        .vegetable span {
+            display: block;
+            font-size: 12px;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+
+        /* Thông tin */
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 12px;
+        }
+
+        .box {
+            background: white;
+            border-radius: 14px;
+            padding: 13px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+        }
+
+        .box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Nút */
+        .buttons {
+            padding: 5px 12px 20px;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            border-radius: 14px;
+            padding: 14px;
+            margin-top: 9px;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+            background: #2f7d32;
+        }
+
+        button:nth-child(2) {
+            background: #d9772b;
+        }
+
+        button:nth-child(3) {
+            background: #a85d38;
+        }
+
+        /* Khách hàng */
+        .customers {
+            margin: 0 12px 20px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+        }
+
+        .customers h2 {
+            margin-top: 0;
+            font-size: 19px;
+        }
+
+        .customer-list {
+            display: flex;
+            justify-content: space-around;
+            font-size: 42px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="game">
+
+    <div class="top-bar">
+        <strong>🌅 Ngày 1</strong>
+        <div class="money">💰 100.000đ</div>
+    </div>
+
+    <div class="title">
+        <h1>🥬 Khởi Nghiệp Bán Rau Ngoài Chợ</h1>
+        <p>Hôm nay là ngày đầu tiên bạn mở quầy!</p>
+    </div>
+
+    <div class="market">
+
+        <div class="market-sign">
+            🏪 QUẦY RAU CỦA BẠN
+        </div>
+
+        <div class="stall">
+
+            <div class="seller">👩‍🌾</div>
+
+            <div class="counter">
+
+                <div class="vegetables">
+
+                    <div class="vegetable">
+                        🥬
+                        <span>Rau muống</span>
+                    </div>
+
+                    <div class="vegetable">
+                        🥦
+                        <span>Cải xanh</span>
+                    </div>
+
+                    <div class="vegetable">
+                        🍅
+                        <span>Cà chua</span>
+                    </div>
+
+                    <div class="vegetable">
+                        🥒
+                        <span>Dưa chuột</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="info">
+
+        <div class="box">
+            <strong>📦 Hàng trong quầy</strong>
+            0 kg
+        </div>
+
+        <div class="box">
+            <strong>💵 Doanh thu</strong>
+            0đ
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button>🛒 Nhập hàng</button>
+
+        <button>💰 Bắt đầu bán</button>
+
+        <button>📋 Quản lý quầy</button>
+
+    </div>
+
+    <div class="customers">
+
+        <h2>👥 Khách đang đi chợ</h2>
+
+        <div class="customer-list">
+            👩‍🦰 👨‍🦱 👵 👨
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
