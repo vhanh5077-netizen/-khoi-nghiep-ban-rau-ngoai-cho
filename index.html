@@ -4,144 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khởi Nghiệp Bán Rau Ngoài Chợ</title>
-
-    <!-- Kết nối file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="game">
+<div class="game">
 
-        <!-- =========================
-             MÀN HÌNH ĐĂNG NHẬP
-        ========================== -->
+    <!-- =========================
+         MÀN HÌNH ĐĂNG NHẬP
+    ========================== -->
+    <section id="loginScreen">
 
-        <section id="loginScreen">
+        <div class="loginBox">
 
-            <div class="loginBox">
-
-                <div class="loginVegetables">
-                    🥬 🍅 🥒
-                </div>
-
-                <h1>
-                    Khởi Nghiệp<br>
-                    Bán Rau Ngoài Chợ
-                </h1>
-
-                <p class="subtitle">
-                    Bắt đầu từ một quầy rau nhỏ<br>
-                    và xây dựng cửa hàng của riêng bạn!
-                </p>
-
-                <input
-                    id="playerName"
-                    class="nameInput"
-                    type="text"
-                    maxlength="20"
-                    placeholder="Nhập tên của bạn..."
-                >
-
-                <button
-                    class="startButton"
-                    onclick="startGame()"
-                >
-                    🌱 BẮT ĐẦU CHƠI
-                </button>
-
-                <div class="loginNote">
-                    Nhập tên để bắt đầu hành trình kinh doanh
-                </div>
-
+            <div class="loginVegetables">
+                🥬 🍅 🥒
             </div>
 
-        </section>
+            <h1>
+                Khởi Nghiệp<br>
+                Bán Rau Ngoài Chợ
+            </h1>
 
+            <p class="subtitle">
+                Bắt đầu từ một quầy rau nhỏ<br>
+                và xây dựng cửa hàng của riêng bạn!
+            </p>
 
-        <!-- =========================
-             MÀN HÌNH GAME
-        ========================== -->
+            <input
+                id="playerName"
+                class="nameInput"
+                type="text"
+                maxlength="20"
+                placeholder="Nhập tên của bạn..."
+            >
 
-        <section id="gameScreen">
+            <button
+                class="startButton"
+                onclick="startGame()">
+                🌱 BẮT ĐẦU CHƠI
+            </button>
 
-            <!-- THANH TRÊN -->
-
-            <div class="topBar">
-
-                <div class="day">
-                    🌅 Ngày 1
-                </div>
-
-                <div class="money">
-                    💰 <span id="money">100.000</span>đ
-                </div>
-
+            <div class="loginNote">
+                Nhập tên để bắt đầu hành trình kinh doanh
             </div>
 
+        </div>
 
-            <!-- TIÊU ĐỀ -->
+    </section>
 
-            <div class="gameTitle">
 
-                <h2>
-                    🥬 Quầy Rau Ngoài Chợ
-                </h2>
+    <!-- =========================
+         MÀN HÌNH GAME
+    ========================== -->
+    <section id="gameScreen">
 
-                <p>
-                    Xin chào,
-                    <strong id="playerDisplay"></strong>! 👋
-                </p>
+        <!-- THANH TRÊN -->
+        <div class="topBar">
 
+            <div class="day">
+                🌅 Ngày <span id="day">1</span>
             </div>
 
+            <div class="money">
+                💰 <span id="money">100.000</span>đ
+            </div>
 
-            <!-- QUẦY RAU -->
+        </div>
 
-            <div class="market">
 
-                <div class="marketTitle">
-                    🏪 QUẦY RAU CỦA BẠN
+        <!-- TIÊU ĐỀ -->
+        <div class="gameTitle">
+
+            <h2>
+                🥬 Quầy Rau Ngoài Chợ
+            </h2>
+
+            <p>
+                Xin chào,
+                <strong id="playerDisplay"></strong>! 👋
+            </p>
+
+        </div>
+
+
+        <!-- QUẦY -->
+        <div class="market">
+
+            <div class="marketTitle">
+                🏪 QUẦY RAU CỦA BẠN
+            </div>
+
+            <div class="stall">
+
+                <div class="seller">
+                    👩‍🌾
                 </div>
 
-                <div class="stall">
+                <div class="counter">
 
-                    <div class="seller">
-                        👩‍🌾
-                    </div>
+                    <div class="vegetables">
 
-                    <div class="counter">
+                        <div class="vegetable">
+                            🥬
+                            <span class="vegetableName">
+                                Rau muống
+                            </span>
+                        </div>
 
-                        <div class="vegetables">
+                        <div class="vegetable">
+                            🥦
+                            <span class="vegetableName">
+                                Cải xanh
+                            </span>
+                        </div>
 
-                            <div class="vegetable">
-                                🥬
-                                <span class="vegetableName">
-                                    Rau muống
-                                </span>
-                            </div>
+                        <div class="vegetable">
+                            🍅
+                            <span class="vegetableName">
+                                Cà chua
+                            </span>
+                        </div>
 
-                            <div class="vegetable">
-                                🥦
-                                <span class="vegetableName">
-                                    Cải xanh
-                                </span>
-                            </div>
-
-                            <div class="vegetable">
-                                🍅
-                                <span class="vegetableName">
-                                    Cà chua
-                                </span>
-                            </div>
-
-                            <div class="vegetable">
-                                🥒
-                                <span class="vegetableName">
-                                    Dưa chuột
-                                </span>
-                            </div>
-
+                        <div class="vegetable">
+                            🥒
+                            <span class="vegetableName">
+                                Dưa chuột
+                            </span>
                         </div>
 
                     </div>
@@ -150,271 +140,828 @@
 
             </div>
 
-
-            <!-- THÔNG TIN -->
-
-            <div class="info">
-
-                <div class="infoBox">
-
-                    <span class="infoTitle">
-                        📦 Hàng trong quầy
-                    </span>
-
-                    <span id="stock">
-                        0 kg
-                    </span>
-
-                </div>
+        </div>
 
 
-                <div class="infoBox">
+        <!-- KHO -->
+        <div class="info">
 
-                    <span class="infoTitle">
-                        💵 Doanh thu
-                    </span>
+            <div class="infoBox">
 
-                    <span id="revenue">
-                        0đ
-                    </span>
+                <span class="infoTitle">
+                    📦 Hàng trong kho
+                </span>
 
-                </div>
+                <span id="stock">
+                    0 kg
+                </span>
 
             </div>
 
 
-            <!-- THÔNG BÁO -->
+            <div class="infoBox">
 
-            <div id="message"></div>
+                <span class="infoTitle">
+                    💵 Doanh thu
+                </span>
 
-
-            <!-- NÚT GAME -->
-
-            <div class="buttons">
-
-                <button
-                    class="gameButton"
-                    onclick="buyStock()"
-                >
-                    🛒 Nhập hàng
-                </button>
-
-
-                <button
-                    class="gameButton"
-                    onclick="sellVegetables()"
-                >
-                    💰 Bắt đầu bán
-                </button>
-
-
-                <button
-                    class="gameButton"
-                    onclick="manageStall()"
-                >
-                    📋 Quản lý quầy
-                </button>
+                <span id="revenue">
+                    0đ
+                </span>
 
             </div>
 
+        </div>
 
-            <!-- KHÁCH -->
 
-            <div class="customers">
+        <!-- THÔNG BÁO -->
+        <div id="message"></div>
 
-                <h3>
-                    👥 Khách đang đi chợ
-                </h3>
+
+        <!-- =========================
+             KHÁCH HÀNG
+        ========================== -->
+
+        <div class="customers">
+
+            <h3>
+                👥 Khách hàng
+            </h3>
+
+            <div id="customerArea">
 
                 <div class="customerList">
-                    👩‍🦰 👨‍🦱 👵 👨
+                    🛍️
                 </div>
 
                 <div class="status">
-                    💡 Hãy nhập hàng rồi bắt đầu bán để kiếm tiền!
+                    Hãy nhập hàng rồi mở quầy để bắt đầu bán!
                 </div>
 
             </div>
 
-        </section>
-
-    </div>
+        </div>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+        <!-- =========================
+             NÚT CHỨC NĂNG
+        ========================== -->
 
-    <script>
+        <div class="buttons">
 
-        let money = 100000;
-        let stock = 0;
-        let revenue = 0;
-        let playerName = "";
+            <button
+                class="gameButton"
+                onclick="buyStock()">
+                🛒 Nhập hàng
+            </button>
 
 
-        /* ĐĂNG NHẬP */
+            <button
+                class="gameButton"
+                onclick="openStall()">
+                🏪 Mở quầy bán
+            </button>
 
-        function startGame() {
 
-            const input =
-                document.getElementById("playerName");
+            <button
+                class="gameButton"
+                onclick="manageStall()">
+                📋 Quản lý quầy
+            </button>
 
-            const name =
-                input.value.trim();
+        </div>
 
-            if (name === "") {
 
-                alert("🌱 Bạn hãy nhập tên trước nhé!");
+        <!-- =========================
+             KHO CHI TIẾT
+        ========================== -->
 
-                input.focus();
+        <div
+            id="inventory"
+            class="customers"
+            style="display:none;">
 
-                return;
+            <h3>
+                📦 Rau trong kho
+            </h3>
+
+            <div id="inventoryList"></div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script>
+
+/* =========================
+   DỮ LIỆU GAME
+========================= */
+
+let money = 100000;
+
+let revenue = 0;
+
+let day = 1;
+
+let playerName = "";
+
+let stallOpen = false;
+
+let customerActive = false;
+
+
+/* =========================
+   DỮ LIỆU RAU
+========================= */
+
+const vegetables = {
+
+    rauMuong: {
+        name: "Rau muống",
+        emoji: "🥬",
+        buyPrice: 5000,
+        sellPrice: 8000,
+        stock: 0
+    },
+
+    caiXanh: {
+        name: "Cải xanh",
+        emoji: "🥦",
+        buyPrice: 7000,
+        sellPrice: 10000,
+        stock: 0
+    },
+
+    caChua: {
+        name: "Cà chua",
+        emoji: "🍅",
+        buyPrice: 10000,
+        sellPrice: 14000,
+        stock: 0
+    },
+
+    duaChuột: {
+        name: "Dưa chuột",
+        emoji: "🥒",
+        buyPrice: 8000,
+        sellPrice: 11000,
+        stock: 0
+    }
+
+};
+
+
+/* =========================
+   KHÁCH HÀNG
+========================= */
+
+const customersData = [
+
+    {
+        name: "Cô Lan",
+        emoji: "👩‍🦰",
+        vegetable: "rauMuong",
+        amount: 2
+    },
+
+    {
+        name: "Chú Nam",
+        emoji: "👨‍🦱",
+        vegetable: "caChua",
+        amount: 1
+    },
+
+    {
+        name: "Bà Hoa",
+        emoji: "👵",
+        vegetable: "caiXanh",
+        amount: 2
+    },
+
+    {
+        name: "Anh Minh",
+        emoji: "👨",
+        vegetable: "duaChuột",
+        amount: 1
+    }
+
+];
+
+
+let currentCustomer = null;
+
+
+/* =========================
+   BẮT ĐẦU GAME
+========================= */
+
+function startGame() {
+
+    const input =
+        document.getElementById("playerName");
+
+    const name =
+        input.value.trim();
+
+    if (name === "") {
+
+        alert(
+            "🌱 Bạn hãy nhập tên trước nhé!"
+        );
+
+        input.focus();
+
+        return;
+    }
+
+    playerName = name;
+
+    document.getElementById(
+        "playerDisplay"
+    ).textContent = playerName;
+
+    document.getElementById(
+        "loginScreen"
+    ).style.display = "none";
+
+    document.getElementById(
+        "gameScreen"
+    ).style.display = "block";
+
+    showMessage(
+        "🎉 Chào mừng " +
+        playerName +
+        " đến với khu chợ!"
+    );
+
+    updateScreen();
+
+}
+
+
+/* =========================
+   NHẬP HÀNG
+========================= */
+
+function buyStock() {
+
+    let choice =
+        prompt(
+            "🛒 NHẬP HÀNG\n\n" +
+
+            "1. 🥬 Rau muống - 5.000đ/kg\n" +
+            "2. 🥦 Cải xanh - 7.000đ/kg\n" +
+            "3. 🍅 Cà chua - 10.000đ/kg\n" +
+            "4. 🥒 Dưa chuột - 8.000đ/kg\n\n" +
+
+            "Nhập số 1 - 4:"
+        );
+
+
+    let vegetableKey;
+
+
+    if (choice === "1") {
+
+        vegetableKey = "rauMuong";
+
+    }
+
+    else if (choice === "2") {
+
+        vegetableKey = "caiXanh";
+
+    }
+
+    else if (choice === "3") {
+
+        vegetableKey = "caChua";
+
+    }
+
+    else if (choice === "4") {
+
+        vegetableKey = "duaChuột";
+
+    }
+
+    else {
+
+        return;
+    }
+
+
+    let vegetable =
+        vegetables[vegetableKey];
+
+
+    let amount =
+        prompt(
+            "Bạn muốn nhập bao nhiêu kg " +
+            vegetable.name +
+            "?"
+        );
+
+
+    amount =
+        Number(amount);
+
+
+    if (
+        !Number.isFinite(amount) ||
+        amount <= 0
+    ) {
+
+        showMessage(
+            "❌ Số kg không hợp lệ!"
+        );
+
+        return;
+    }
+
+
+    amount =
+        Math.floor(amount);
+
+
+    let totalCost =
+        vegetable.buyPrice * amount;
+
+
+    if (money < totalCost) {
+
+        showMessage(
+            "💸 Bạn không đủ tiền nhập " +
+            amount +
+            "kg " +
+            vegetable.name +
+            "!"
+        );
+
+        return;
+    }
+
+
+    money -= totalCost;
+
+    vegetable.stock += amount;
+
+
+    updateScreen();
+
+    updateInventory();
+
+
+    showMessage(
+        "🛒 Đã nhập " +
+        amount +
+        "kg " +
+        vegetable.name +
+        "!"
+    );
+
+}
+
+
+/* =========================
+   MỞ QUẦY
+========================= */
+
+function openStall() {
+
+    let totalStock = 0;
+
+
+    for (
+        let key in vegetables
+    ) {
+
+        totalStock +=
+            vegetables[key].stock;
+
+    }
+
+
+    if (totalStock <= 0) {
+
+        showMessage(
+            "📦 Bạn chưa có rau! Hãy nhập hàng trước."
+        );
+
+        return;
+    }
+
+
+    stallOpen = true;
+
+
+    showMessage(
+        "🏪 Quầy đã mở! Khách bắt đầu đến."
+    );
+
+
+    setTimeout(
+        nextCustomer,
+        800
+    );
+
+}
+
+
+/* =========================
+   KHÁCH TIẾP THEO
+========================= */
+
+function nextCustomer() {
+
+    if (!stallOpen) {
+        return;
+    }
+
+
+    let randomIndex =
+        Math.floor(
+            Math.random() *
+            customersData.length
+        );
+
+
+    currentCustomer =
+        customersData[randomIndex];
+
+
+    customerActive = true;
+
+
+    showCustomer();
+
+}
+
+
+/* =========================
+   HIỂN THỊ KHÁCH
+========================= */
+
+function showCustomer() {
+
+    let customer =
+        currentCustomer;
+
+
+    let vegetable =
+        vegetables[
+            customer.vegetable
+        ];
+
+
+    const customerArea =
+        document.getElementById(
+            "customerArea"
+        );
+
+
+    customerArea.innerHTML = `
+
+        <div
+            style="
+                font-size:50px;
+                margin-bottom:8px;
+            "
+        >
+            ${customer.emoji}
+        </div>
+
+        <div
+            style="
+                font-size:18px;
+                font-weight:bold;
+                margin-bottom:8px;
+            "
+        >
+            ${customer.name}
+        </div>
+
+        <div
+            style="
+                background:#fff4d6;
+                padding:12px;
+                border-radius:12px;
+                margin-bottom:12px;
+            "
+        >
+            "Chị ơi, cho em
+            <strong>
+                ${customer.amount}kg
+                ${vegetable.name}
+            </strong>
+            với!"
+        </div>
+
+        <div
+            style="
+                margin-bottom:10px;
+                color:#666;
+            "
+        >
+            Trong kho:
+            ${vegetable.stock}kg
+        </div>
+
+        <button
+            class="gameButton"
+            onclick="sellToCustomer()"
+        >
+            ${vegetable.emoji}
+            Bán ${customer.amount}kg
+            ${vegetable.name}
+            -
+            ${(vegetable.sellPrice * customer.amount)
+                .toLocaleString("vi-VN")}đ
+        </button>
+
+    `;
+
+}
+
+
+/* =========================
+   BÁN CHO KHÁCH
+========================= */
+
+function sellToCustomer() {
+
+    if (
+        !customerActive ||
+        !currentCustomer
+    ) {
+
+        return;
+    }
+
+
+    let customer =
+        currentCustomer;
+
+
+    let vegetable =
+        vegetables[
+            customer.vegetable
+        ];
+
+
+    let amount =
+        customer.amount;
+
+
+    /* KHÔNG ĐỦ RAU */
+
+    if (
+        vegetable.stock < amount
+    ) {
+
+        showMessage(
+            "😥 Bạn không đủ " +
+            vegetable.name +
+            " để bán cho khách!"
+        );
+
+        return;
+    }
+
+
+    /* TRỪ KHO */
+
+    vegetable.stock -= amount;
+
+
+    /* TÍNH TIỀN */
+
+    let earned =
+        vegetable.sellPrice *
+        amount;
+
+
+    money += earned;
+
+    revenue += earned;
+
+
+    customerActive = false;
+
+
+    updateScreen();
+
+    updateInventory();
+
+
+    showMessage(
+        "💰 Bán thành công! +" +
+        earned.toLocaleString("vi-VN") +
+        "đ"
+    );
+
+
+    document.getElementById(
+        "customerArea"
+    ).innerHTML = `
+
+        <div
+            class="customerList"
+        >
+            😊
+        </div>
+
+        <div class="status">
+            Khách đã mua hàng!
+            Đang chờ khách tiếp theo...
+        </div>
+
+    `;
+
+
+    /* KHÁCH MỚI */
+
+    setTimeout(
+        nextCustomer,
+        1800
+    );
+
+}
+
+
+/* =========================
+   QUẢN LÝ QUẦY
+========================= */
+
+function manageStall() {
+
+    updateInventory();
+
+    document.getElementById(
+        "inventory"
+    ).style.display = "block";
+
+}
+
+
+/* =========================
+   HIỂN THỊ KHO
+========================= */
+
+function updateInventory() {
+
+    const list =
+        document.getElementById(
+            "inventoryList"
+        );
+
+
+    list.innerHTML = "";
+
+
+    for (
+        let key in vegetables
+    ) {
+
+        let vegetable =
+            vegetables[key];
+
+
+        let row =
+            document.createElement(
+                "div"
+            );
+
+
+        row.style.display = "flex";
+
+        row.style.justifyContent =
+            "space-between";
+
+        row.style.padding =
+            "10px 0";
+
+        row.style.borderBottom =
+            "1px solid #eee";
+
+
+        row.innerHTML = `
+
+            <span>
+                ${vegetable.emoji}
+                ${vegetable.name}
+            </span>
+
+            <strong>
+                ${vegetable.stock}kg
+            </strong>
+
+        `;
+
+
+        list.appendChild(row);
+
+    }
+
+}
+
+
+/* =========================
+   CẬP NHẬT MÀN HÌNH
+========================= */
+
+function updateScreen() {
+
+    document.getElementById(
+        "money"
+    ).textContent =
+        money.toLocaleString("vi-VN");
+
+
+    let totalStock = 0;
+
+
+    for (
+        let key in vegetables
+    ) {
+
+        totalStock +=
+            vegetables[key].stock;
+
+    }
+
+
+    document.getElementById(
+        "stock"
+    ).textContent =
+        totalStock + " kg";
+
+
+    document.getElementById(
+        "revenue"
+    ).textContent =
+        revenue.toLocaleString("vi-VN") +
+        "đ";
+
+}
+
+
+/* =========================
+   THÔNG BÁO
+========================= */
+
+function showMessage(text) {
+
+    const message =
+        document.getElementById(
+            "message"
+        );
+
+
+    message.textContent = text;
+
+    message.style.display =
+        "block";
+
+
+    setTimeout(
+        function() {
+
+            message.style.display =
+                "none";
+
+        },
+        2500
+    );
+
+}
+
+
+/* =========================
+   ENTER ĐỂ BẮT ĐẦU
+========================= */
+
+document
+    .getElementById("playerName")
+    .addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                event.key === "Enter"
+            ) {
+
+                startGame();
+
             }
 
-            playerName = name;
-
-            document.getElementById(
-                "playerDisplay"
-            ).textContent = playerName;
-
-            document.getElementById(
-                "loginScreen"
-            ).style.display = "none";
-
-            document.getElementById(
-                "gameScreen"
-            ).style.display = "block";
-
-            showMessage(
-                "🎉 Chào mừng " +
-                playerName +
-                " đến với khu chợ!"
-            );
         }
+    );
 
-
-        /* NHẬP HÀNG */
-
-        function buyStock() {
-
-            const price = 20000;
-            const amount = 10;
-
-            if (money < price) {
-
-                showMessage(
-                    "💸 Bạn không đủ tiền để nhập hàng!"
-                );
-
-                return;
-            }
-
-            money -= price;
-            stock += amount;
-
-            updateScreen();
-
-            showMessage(
-                "🛒 Bạn đã nhập thêm " +
-                amount +
-                "kg rau!"
-            );
-        }
-
-
-        /* BÁN RAU */
-
-        function sellVegetables() {
-
-            if (stock < 2) {
-
-                showMessage(
-                    "🥬 Quầy không đủ rau! Hãy nhập thêm hàng."
-                );
-
-                return;
-            }
-
-            const saleMoney = 35000;
-
-            stock -= 2;
-            money += saleMoney;
-            revenue += saleMoney;
-
-            updateScreen();
-
-            showMessage(
-                "💰 Một khách vừa mua rau! +" +
-                saleMoney.toLocaleString("vi-VN") +
-                "đ"
-            );
-        }
-
-
-        /* QUẢN LÝ QUẦY */
-
-        function manageStall() {
-
-            showMessage(
-                "📋 Tính năng quản lý quầy sẽ được mở rộng!"
-            );
-        }
-
-
-        /* CẬP NHẬT GIAO DIỆN */
-
-        function updateScreen() {
-
-            document.getElementById(
-                "money"
-            ).textContent =
-                money.toLocaleString("vi-VN");
-
-            document.getElementById(
-                "stock"
-            ).textContent =
-                stock + " kg";
-
-            document.getElementById(
-                "revenue"
-            ).textContent =
-                revenue.toLocaleString("vi-VN") + "đ";
-        }
-
-
-        /* THÔNG BÁO */
-
-        function showMessage(text) {
-
-            const message =
-                document.getElementById("message");
-
-            message.textContent = text;
-
-            message.style.display = "block";
-
-            setTimeout(function() {
-
-                message.style.display = "none";
-
-            }, 2500);
-        }
-
-
-        /* NHẤN ENTER ĐỂ VÀO GAME */
-
-        document
-            .getElementById("playerName")
-            .addEventListener("keydown", function(event) {
-
-                if (event.key === "Enter") {
-                    startGame();
-                }
-
-            });
-
-    </script>
+</script>
 
 </body>
 </html>
